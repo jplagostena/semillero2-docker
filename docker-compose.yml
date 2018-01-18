@@ -1,0 +1,34 @@
+version: "3"
+services:
+  semillero-api:
+    image: maven:3.5.2
+    working_dir: /semillero2-api
+    volumes:
+      - $PWD/semillero2-api:/semillero2-api
+    ports:
+      - "8080:8080"
+    links:
+      - semillero-db
+    command: mvn clean spring-boot:run
+
+  semillero-web:
+      build:
+        context: $PWD/semillero2-web
+        dockerfile: Dockerfile
+      volumes:
+        - $PWD/semillero2-web:/semillero2-web
+      ports:
+        - "4200:4200"
+      links:
+        - semillero-api
+
+  semillero-db:
+    image: mariadb:10.3
+    volumes:
+      - $HOME/nahual/docker-storage:/var/lib/mysql
+      - $HOME/nahual/mariadb-dev-conf:/etc/mysql/conf.d
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+      - TERM=xterm
+    ports:
+      - "3306:3306"
