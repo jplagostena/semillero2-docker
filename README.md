@@ -1,10 +1,10 @@
-#Semillero 2 - Proyecto Nahual
+# Semillero 2 - Proyecto Nahual
 
-###Requisitos
+### Requisitos
 
 El sistema corre con Docker y docker-compose para orquestar containers al menos en desarrollo.
 
-###Instalación DEV
+### Instalación DEV
 
 * Hacer un directorio en el $HOME de tu sistema llamado "nahual" (sin comillas, claro)
 * Asegurarse de que este directorio tenga permisos de escritura
@@ -29,7 +29,7 @@ La idea es que nos quede un link simbólico al docker-compose.yml con las 3 carp
     * semillero2-api hereda de maven y usa java 8.
     * una base de datos MariaDB con la hermosura de root/{nada} como password (si, lo se, estamos para la ekoparty (?))  
     
-###Documentación API
+### Documentación API
     
 La documentación de la API está escrita en RAML 0.8. 
 
