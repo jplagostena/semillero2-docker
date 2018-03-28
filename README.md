@@ -27,7 +27,8 @@ La idea es que nos quede un link simbólico al docker-compose.yml con las 3 carp
 * El docker-compose.yml levanta 3 contenedores:
     * semillero2-web es una imágen que hereda de node-9 y usa angular y el server embebido de angular.
     * semillero2-api hereda de maven y usa java 8.
-    * una base de datos MariaDB con la hermosura de root/{nada} como password (si, lo se, estamos para la ekoparty (?))  
+    * una base de datos MariaDB con la hermosura de root/{nada} como password (si, lo se, estamos para la ekoparty (?))
+        *PUERTO: el puerto es el __3307__ para evitar el clashing con instalaciones ya existentes de MariaDB | MySQL  
     
 ### Documentación API
     
