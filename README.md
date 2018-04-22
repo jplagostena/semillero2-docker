@@ -6,14 +6,18 @@ El sistema corre con Docker y docker-compose para orquestar containers al menos 
 
 ### Instalación DEV
 
-* Hacer un directorio en el $HOME de tu sistema llamado "nahual" (sin comillas, claro)
+* Hacer un directorio en el $HOME de tu sistema llamado "nahual/semillero" (sin comillas, claro)
+
+    `mkdir nahual/semillero`
 * Asegurarse de que este directorio tenga permisos de escritura
 * En este directorio hacer el checkout de los 3 proyectos de Semillero 2
 
 
-    git clone git@github.com:nahual/semillero2-web.git
+    `git clone git@github.com:nahual/semillero2-web.git
+    
     git clone git@github.com:nahual/semillero2-docker.git
-    git clone git@github.com:nahual/semillero2-api.git
+    
+    git clone git@github.com:nahual/semillero2-api.git`
     
 * Por problemas con el path y docker-compose, creamos un link simbólico del archivo en el directorio padre
 
