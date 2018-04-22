@@ -22,7 +22,7 @@ El sistema corre con Docker y docker-compose para orquestar containers al menos 
 * Por problemas con el path y docker-compose, creamos un link simbólico del archivo en el directorio padre
 
   
-    ln -s ~/nahual/semillero/semillero2-docker/docker-compose.yml ~/nahual/semillero/
+    `ln -s ~/nahual/semillero/semillero2-docker/docker-compose.yml ~/nahual/semillero/`
 
 La idea es que nos quede un link simbólico al docker-compose.yml con las 3 carpetas de los proyectos.
     
